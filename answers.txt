@@ -1,0 +1,20 @@
+1. How would you describe preprocessing to someone new to CSS?
+   Is typing information into a preprocessor such as less and less processes it into css
+
+2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+   Favorite concept is being able to import files so I can work on small parts at a time and not get 
+   overwhelmed by the whole file.
+
+   The concept that gives me the most problem is where to use a mixin.
+
+3. How would you explain the concept of a variable to someone new to programming?
+   A variable is like a box that holds something you will need later. The name of the variable is like the 
+   writing on the box that tells you what is in the box.
+
+4. What is the purpose of using functions in code?
+   makes it easier to run the same code multiple times without having to rewrite it everytime. 
+   keeps your code dry
+
+5. What is JSON data?
+   used to store and transport data 
+   often used when data is sent from server to a web page
