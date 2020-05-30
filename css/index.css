@@ -137,23 +137,29 @@ button:hover{
 }
 
 @media(max-width: 500px){
-    header     {
+    .header     {
       width: 100%;
-      margin: auto 0;
       display: flex;
       justify-content: space-evenly;
     } 
 
     .nav{
         width:80%;
+        font-size: .5em;
     }
 
-    .artists-container{
-        widows: 80%;
-        margin-left: 2em;
+    .artists-container {
+        width: 100%;
         flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
+        justify-content: stretch;
+        align-items: center;
+    }
+    .artist{
+        width: fit-content;
+        margin: auto 0;
+        margin-left: 1em;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
     }
       
   }
