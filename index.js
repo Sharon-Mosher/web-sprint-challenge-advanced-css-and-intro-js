@@ -303,9 +303,21 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */) {
-  /* Code here */
-}
+  
+  function addArtist(array){	
+      const newArtist = [ {
+        id:21,
+        name:"Sharon Mosher",
+        years:"1972 - 2020",
+        genre:"Web Design",
+        nationality:"Native American and Irish",
+        bio: "Mother of four and grandmother of 10",
+     }	
+    ] 
+   artists.splice(19, 0, 'newArtist');
+   return artists[artists.length - 1];
+  } 
+    console.log(artists.length, artists[19].name);
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
