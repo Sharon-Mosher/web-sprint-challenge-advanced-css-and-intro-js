@@ -256,10 +256,19 @@ console.log(getArtistByIndex(artists, 0));
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of 
 artists who were born the 20th century (1900-2000) */
 
-function get20s(/* Code here */) {
-  /* Code here */
+function get20s(artists){
+  let number = [];
+  let get20th = [];
+  for(let i=0; i<artists.length; i++){
+    number = parseInt(artists[i].years);
+    if (number > 1900){
+      get20th.push(artists[i].name);
+    }
+  }
+  return (get20th);
 }
 
+console.log(get20s(artists));
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -268,7 +277,9 @@ function get20s(/* Code here */) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19.
  *
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously 
+ * remove artists from the array until there are none left. If you refresh your browser, 
+ * the data will reset.
  */
 function removeArtist(/*code here*/) {
   /* code here */
