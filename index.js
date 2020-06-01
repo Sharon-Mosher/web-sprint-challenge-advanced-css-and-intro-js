@@ -229,12 +229,14 @@ const artists = [
 (2) Bio of the third artist (2nd index) in the array */
 
 console.log(artists[0].name);
+
 console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. 
 Use an array method to fix this issue and console.log() to check your work. */
 artists[8].name ="Vincent Van Gogh"
+
 console.log(artists[8].name);
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -245,7 +247,9 @@ console.log(artists[8].name);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(array, index) {
+
   const name = array[index].name;
+
   return `The artist at index ${index} is ${name}.`;
 }
 
@@ -255,23 +259,33 @@ console.log(getArtistByIndex(artists, 0));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of 
 artists who were born the 20th century (1900-2000) */
+// function get20s(artists){
 
-function get20s(artists){
-  let number = [];
-  let get20th = [];
-  for(let i=0; i<artists.length; i++){
-    number = parseInt(artists[i].years);
-    if (number > 1900){
-      get20th.push(artists[i].name);
-    }
-  }
-  return (get20th);
+  function get20s(artists){		
+
+    let num = [];
+
+    let get20th = [];
+
+      for(let i = 0; i<artists.length; i++){	
+
+        if (artists[i].years = 1900 - 2000) {	
+
+          num = parseInt(artists[i].years);
+
+        if (num > 1900){
+
+           get20th.push(artists[i].name);
+      }			
+    }  
+   return (get20th);
+  }	
 }
+  console.log(get20s(artists));
 
-console.log(get20s(artists));
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
- *     (1) artists array
- *     (2) a number which is the desired index in the array.
+ ``1234/*     (1) artists array
+ /*     (2) a number which is the desired index in the array.
  * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
  *
  * For example, if removeArtist is invoked with the data and the number 0,
@@ -290,7 +304,10 @@ function removeArtist(array, index) {
 
 
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists
+":>L<Ukymjrbfgvcx 
+*+/*function addArtist(artists,newArray)
++ *\][21`  2w3e4567890function addArtist(artists,newArray)
++-[=\Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists
  array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
@@ -305,19 +322,26 @@ At the end, this function should console.log() the new array with information ad
 
   
   function addArtist(array){	
-      const newArtist = [ {
-        id:21,
-        name:"Sharon Mosher",
-        years:"1972 - 2020",
-        genre:"Web Design",
-        nationality:"Native American and Irish",
-        bio: "Mother of four and grandmother of 10",
+
+      const newArtist = [ 
+        {
+          id:21,
+
+          name:"Sharon Mosher",
+
+          years:"1972 - 2020",
+
+          genre:"Web Design",
+
+          nationality:"Native American and Irish",
+
+          bio: "Mother of four and grandmother of 10",
      }	
     ] 
-   artists.splice(19, 0, 'newArtist');
-   return artists[artists.length - 1];
+    artists.push( 'newArtist');
+    
   } 
-    console.log(artists.length, artists[19].name);
+    console.log(artists.index, artists.name);
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -330,14 +354,19 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(array){
   let artist = [];
+
   let number = [];
+
 for(let i = 0; i<artists.length;i++){
+
   num = (artists[i].paintings);
-  if (num >= 100){
+
+    if (num >= 100){
+
     artist.push(artists[i].name);
+    }
   }
-  }
-return (artist);
+
 console.log(artist);
 }
 
