@@ -261,27 +261,22 @@ console.log(getArtistByIndex(artists, 0));
 artists who were born the 20th century (1900-2000) */
 // function get20s(artists){
 
-  function get20s(artists){		
+  function get20s(artists, years){		
 
-    let num = [];
+   const name = artists[years];
 
-    let get20th = [];
+   const year = twentyCentury;
 
-      for(let i = 0; i<artists.length; i++){	
+      for(let i = 0; i<artists.years; i++){	
 
-        if (artists[i].years = 1900 - 2000) {	
+        if (artists.years < 1900 && artists.year > 2000) {	
 
-          num = parseInt(artists[i].years);
-
-        if (num > 1900){
-
-           get20th.push(artists[i].name);
-      }			
-    }  
-   return (get20th);
-  }	
-}
-  console.log(get20s(artists));
+          return twentyCentury;     
+        }
+      }
+      console.log (twentyCentury);
+    }
+  
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  ``1234/*     (1) artists array
@@ -300,10 +295,6 @@ function removeArtist(array, index) {
 }
 
 /**
-
-
-
-
 ":>L<Ukymjrbfgvcx 
 *+/*function addArtist(artists,newArray)
 + *\][21`  2w3e4567890function addArtist(artists,newArray)
@@ -321,11 +312,15 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should console.log() the new array with information added"*/
 
   
-  function addArtist(array){	
+  function addArtist(twentyFirstArtist){	
 
-      const newArtist = [ 
+      artists.push(twentyFirstArtist);
+      console.log (artists[artists.length - 1])
+    }
+
+      addArtist(
         {
-          id:21,
+          id:"21",
 
           name:"Sharon Mosher",
 
@@ -336,12 +331,10 @@ At the end, this function should console.log() the new array with information ad
           nationality:"Native American and Irish",
 
           bio: "Mother of four and grandmother of 10",
-     }	
-    ] 
-    artists.push( 'newArtist');
+     })	
+     
+    console.log(artists.length);
     
-  } 
-    console.log(artists.index, artists.name);
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -371,6 +364,8 @@ console.log(artist);
 }
 
 lotsOfArt(artists)
+
+
 // 🎨🎨 STRETCH 🎨🎨//
 
 /* STRETCH 1: Programtically console.log HTML element structure.
