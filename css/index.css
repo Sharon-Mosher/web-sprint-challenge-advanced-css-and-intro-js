@@ -137,14 +137,15 @@ button:hover{
 }
 
 @media(max-width: 500px){
-    .header     {
+    header     {
       width: 100%;
-      display: flex;
-      justify-content: space-evenly;
+      
     } 
 
-    .nav{
-        width:80%;
+    nav{
+        width:100%;
+        display: flex;
+        justify-content: space-evenly;
         font-size: .5em;
     }
 

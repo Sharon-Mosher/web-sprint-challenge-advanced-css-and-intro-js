@@ -232,7 +232,6 @@ const artists = [
 
 // console.log(artists[2].bio);
 
-
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. 
 Use an array method to fix this issue and console.log() to check your work. */
 // artists[8].name ="Vincent Van Gogh"
@@ -254,34 +253,25 @@ Use an array method to fix this issue and console.log() to check your work. */
 // }
 
 // console.log(getArtistByIndex(artists, 0));
-// /**
-
+// /**get console.log (newArray);
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of 
 artists who were born the 20th century (1900-2000) */
 // function get20s(artists){
+function get20s(artist) {
+  let twentiesArtists = [];
 
-  // function get20s(artists){
+  for (let i = 0; i < artist.length; i++)
+    if (
+      artist[i].years.slice(0, 5) <= 2000 &&
+      artist[i].years.slice(0, 5) >= 1900
+    ) {
+      twentiesArtists.push(artist[i].name);
+    }
+  return twentiesArtists;
+}
 
-  //   const newArray = [];
-
-  //     for(let i = 0; i<artists.length; i++){
-
-  //       if(artists[i].years >=1900 && artists[i].years<=2000 ){
-
-  //         newArray.push(artists[i].name)
-  //       }
-
-  //        return newArray;
-  //     }
-
-  // }
-  
-  // console.log (get20s(artists));
-
-
-  
-  
+console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  ``1234/*     (1) artists array
@@ -295,14 +285,14 @@ artists who were born the 20th century (1900-2000) */
  * remove artists from the array until there are none left. If you refresh your browser, 
  * the data will reset.
  */
-function removeArtist(artists, index) {
-     artists.splice(index, 1)
+//function removeArtist(artists, index) {
+//      artists.splice(index, 1)
 
-  console.log (artists.length);
-  
-}
+//   console.log (artists.length);
 
-removeArtist(artists, 0)
+// }
+
+// removeArtist(artists, 0)
 
 /**
 ":>L<Ukymjrbfgvcx 
@@ -321,31 +311,28 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-  
-  // function addArtist(twentyFirstArtist){	
+// function addArtist(twentyFirstArtist){
 
-  //     artists.push(twentyFirstArtist);
-  //     console.log (artists[artists.length - 1])
-  //   }
+//     artists.push(twentyFirstArtist);
+//     console.log (artists[artists.length - 1])
+//   }
 
-    //   addArtist(
-    //     {
-    //       id:"21",
+//   addArtist(
+//     {
+//       id:"21",
 
-    //       name:"Sharon Mosher",
+//       name:"Sharon Mosher",
 
-    //       years:"1972 - 2020",
+//       years:"1972 - 2020",
 
-    //       genre:"Web Design",
+//       genre:"Web Design",
 
-    //       nationality:"Native American and Irish",
+//       nationality:"Native American and Irish",
 
-    //       bio: "Mother of four and grandmother of 10",
-    //  })	
-     
-    // console.log(artists.length);
-    
+//       bio: "Mother of four and grandmother of 10",
+//  })
 
+// console.log(artists.length);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -374,7 +361,6 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 // }
 
 // lotsOfArt(artists)
-
 
 // 🎨🎨 STRETCH 🎨🎨//
 
